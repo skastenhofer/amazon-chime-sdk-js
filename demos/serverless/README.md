@@ -44,7 +44,7 @@ finishes, it will output a URL that can be opened in a browser.
 
 
 ### Cleaning up
-To avoid incurring any unintended charges as a result of deploying the serverless demo, it is important to delete the AWS CloudFormation stack after you are finished using it. You can delete the provisioned CloudFormation stack using the [AWS CloudFormation console](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cfn-console-delete-stack.html) or the [AWS CLI](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-cli-deleting-stack.html).
+To avoid incurring any unintended charges as a result of deploying the serverless demo, it is important to delete the AWS CloudFormation stack after you are finished using it. You can delete the provisioned CloudFormation stack using the [AWS CloudFormation console](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cfn-console-delete-stack.html) or the [AWS CLI](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-cli-deleting-stack.html) as well as [delete the S3 buckets](https://docs.aws.amazon.com/AmazonS3/latest/userguide/delete-bucket.html) that were created.
 
 ### Meeting dashboard
 The serverless demo uses Amazon CloudWatch Logs to visualize meeting events on the dashboard.
@@ -60,3 +60,7 @@ The Lambda function uploads these events to CloudWatch Logs for searching and an
 4. Choose the meeting event dashboard.
 5. You can view the meeting success rate, the platform information, and other operational data from meeting attendees.
   At the bottom of the dashboard, the widget explains how to search for a specific attendee's events.
+
+
+## Notice
+Disclaimer: You and your end users understand that recording Amazon Chime SDK meetings with this demo may be subject to laws or regulations regarding the recording of electronic communications. It is your and your end users’ responsibility to comply with all applicable laws regarding the recordings, including properly notifying all participants in a recorded session, or communication that the session or communication is being recorded, and obtain their consent.
